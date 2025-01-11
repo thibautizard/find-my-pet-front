@@ -4,7 +4,21 @@ import { CardAvailablePetComponent } from "../card-available-pet/card-available-
 @Component({
   selector: "app-available-pets",
   imports: [CardAvailablePetComponent, NgFor],
-  templateUrl: "./available-pets.component.html",
+  template: `
+    <section class="space-y-3">
+      <h3 class="font-bold text-xl mb-3">Available pets nearby</h3>
+      <div class="grid lg:grid-cols-2 gap-3 w-full">
+        <app-card-available-pet
+          *ngFor="let pet of pets"
+          name="{{ pet.name }}"
+          image="{{ pet.image }}"
+          description="{{ pet.description }}"
+          type="{{ pet.type }}"
+          location="{{ pet.location }}"
+        ></app-card-available-pet>
+      </div>
+    </section>
+  `,
   styles: ``
 })
 export class AvailablePetsComponent {
