@@ -3,9 +3,10 @@
   "commit_type": {
     "enable": true,
     "initial_value": "feat",
+    "max_items": "Infinity",
     "infer_type_from_branch": true,
-    "append_emoji_to_label": false,
-    "append_emoji_to_commit": false,
+    "append_emoji_to_label": true,
+    "append_emoji_to_commit": true,
     "options": [
       {
         "value": "feat",
@@ -17,14 +18,19 @@
         "value": "fix",
         "label": "fix",
         "hint": "A bug fix",
-        "emoji": "🐛",
-        "trailer": "Changelog: fix"
+        "emoji": "🐛"
       },
       {
         "value": "style",
         "label": "style",
-        "hint": "A style change",
+        "hint": "Change UI/UX",
         "emoji": "🎨"
+      },
+      {
+        "value": "database",
+        "label": "database",
+        "hint": "Change database structure",
+        "emoji": "📀"
       },
       {
         "value": "docs",
@@ -48,19 +54,13 @@
         "value": "test",
         "label": "test",
         "hint": "Adding missing tests or correcting existing tests",
-        "emoji": "🚨"
+        "emoji": "🧪"
       },
       {
-        "value": "build",
-        "label": "build",
-        "hint": "Changes that affect the build system or external dependencies",
-        "emoji": "🚧"
-      },
-      {
-        "value": "ci",
-        "label": "ci",
-        "hint": "Changes to our CI configuration files and scripts",
-        "emoji": "🤖"
+        "value": "config",
+        "label": "config",
+        "hint": "Modify configuration files",
+        "emoji": "🧰"
       },
       {
         "value": "chore",
@@ -69,13 +69,32 @@
         "emoji": "🧹"
       },
       {
+        "value": "wording",
+        "label": "wording",
+        "hint": "Wording changes",
+        "emoji": "💬"
+      },
+      {
         "value": "",
         "label": "none"
       }
     ]
   },
   "commit_scope": {
-    "enable": false
+    "enable": true,
+    "custom_scope": false,
+    "initial_value": "web",
+    "max_items": "Infinity",
+    "options": [
+      {
+        "value": "web",
+        "label": "web"
+      },
+      {
+        "value": "*",
+        "label": "none"
+      }
+    ]
   },
   "check_ticket": {
     "infer_ticket": false,
@@ -123,7 +142,7 @@
     "separator": "/"
   },
   "branch_ticket": {
-    "enable": true,
+    "enable": false,
     "required": false,
     "separator": "-"
   },

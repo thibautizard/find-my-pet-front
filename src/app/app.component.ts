@@ -20,16 +20,22 @@ import { type Pet, PETS } from "./pets.model";
   template: `
     <app-header />
     <main class="grow bg-gray-50">
-      <app-hero />
+      <app-hero (searchPetsEvent)="handleSearch($event)" />
       <section class="w-[1200px] max-w-[95%] mx-auto my-12 flex gap-6">
         <app-pets-filter />
         <app-available-pets class="grow" [pets]="pets" />
       </section>
     </main>
     <app-footer />
+    <router-outlet />
   `,
 })
 export class AppComponent {
   title = "find-my-pet";
   pets: Pet[] = PETS;
+  location = "";
+
+  handleSearch(location: string) {
+    if (location) console.log("location in app.component", location);
+  }
 }
