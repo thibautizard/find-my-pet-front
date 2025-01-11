@@ -19,7 +19,7 @@ import { CardAvailablePetComponent } from "../card-available-pet/card-available-
       </div>
     </section>
   `,
-  styles: ``
+  styles: ``,
 })
 export class AvailablePetsComponent {
   @Input() pets: any[] = [];

@@ -4,7 +4,9 @@ import { Component } from "@angular/core";
   selector: "app-header",
   imports: [],
   template: `
-    <header class="bg-red-600 text-white flex justify-between items-center px-12 py-4">
+    <header
+      class="bg-red-600 text-white flex justify-between items-center px-12 py-4"
+    >
       <h1 class="text-xl flex items-center gap-2">
         <svg
           class="rotate-45"
@@ -27,6 +29,6 @@ import { Component } from "@angular/core";
         <li><a href="">About</a></li>
       </ul>
     </header>
-  `
+  `,
 })
 export class HeaderComponent {}

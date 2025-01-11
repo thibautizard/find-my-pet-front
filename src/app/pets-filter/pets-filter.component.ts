@@ -8,12 +8,7 @@ import { Component } from "@angular/core";
       <h3 class="font-bold">Filters</h3>
 
       <div class="flex flex-col gap-2">
-        <label
-          class="text-sm"
-          for="petType"
-        >
-          Pet Type</label
-        >
+        <label class="text-sm" for="petType"> Pet Type</label>
         <select
           name="petType"
           class="px-2 border rounded-md text-sm py-1"
@@ -28,11 +23,7 @@ import { Component } from "@angular/core";
       </div>
 
       <div class="flex flex-col gap-2">
-        <label
-          class="text-sm"
-          for="location"
-          >Location</label
-        >
+        <label class="text-sm" for="location">Location</label>
         <input
           class="border px-2 text-sm py-1 rounded-md"
           type="text"
@@ -45,10 +36,11 @@ import { Component } from "@angular/core";
       <button
         type="text"
         class="bg-red-600 w-full text-sm py-2 rounded-md text-white text-center"
-        >Apply filters</button
       >
+        Apply filters
+      </button>
     </div>
   `,
-  styles: ``
+  styles: ``,
 })
 export class PetsFilterComponent {}

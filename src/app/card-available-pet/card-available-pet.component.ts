@@ -9,12 +9,14 @@ import { NgStyle } from "@angular/common";
       <div
         class="h-[200px] bg-cover bg-center"
         [ngStyle]="{ 'background-image': 'url(' + image + ')' }"
-      >
-      </div>
+      ></div>
       <div class="p-3 bg-white">
         <div class="flex justify-between items-center mb-2">
           <h5 class="font-bold">{{ name }}</h5>
-          <small class="text-xs scale-90 text-red-600 bg-red-100 rounded-full px-1.5 self-start py-0.5">{{ type }}</small>
+          <small
+            class="text-xs scale-90 text-red-600 bg-red-100 rounded-full px-1.5 self-start py-0.5"
+            >{{ type }}</small
+          >
         </div>
         <p class="text-xs text-gray-400">{{ description }}</p>
 
@@ -33,7 +35,9 @@ import { NgStyle } from "@angular/common";
               stroke-width="1.5"
             >
               <path d="M12 12.8a3.35 3.35 0 1 0 0-6.7a3.35 3.35 0 0 0 0 6.7Z" />
-              <path d="M12 2.75c-6.7 0-7.817 5.583-6.7 9.815c.983 3.708 3.93 6.242 5.874 8.32a1.117 1.117 0 0 0 1.652 0c1.943-2.078 4.891-4.612 5.874-8.32c1.117-4.232 0-9.815-6.7-9.815Z" />
+              <path
+                d="M12 2.75c-6.7 0-7.817 5.583-6.7 9.815c.983 3.708 3.93 6.242 5.874 8.32a1.117 1.117 0 0 0 1.652 0c1.943-2.078 4.891-4.612 5.874-8.32c1.117-4.232 0-9.815-6.7-9.815Z"
+              />
             </g>
           </svg>
           <span>
@@ -74,7 +78,7 @@ import { NgStyle } from "@angular/common";
       </div>
     </div>
   `,
-  styles: ``
+  styles: ``,
 })
 export class CardAvailablePetComponent {
   @Input() name: string = "Name";
