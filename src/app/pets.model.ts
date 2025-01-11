@@ -24,9 +24,9 @@ export const PETS: Pet[] = [
     age: 2,
     image:
       "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80",
-    location: "Seattle, WA",
+    location: "Bordeaux",
     description:
-      "Friendly and energetic Golden Retriever looking for an active family.",
+      "Golden Retriever amical et énergique à la recherche d'une famille active.",
     contact: {
       phone: "(555) 123-4567",
       email: "shelter@example.com",
